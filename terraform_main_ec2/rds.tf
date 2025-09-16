@@ -3,12 +3,12 @@ resource "aws_db_instance" "rds" {
   identifier = "book-rds"
   db_subnet_group_name   = aws_db_subnet_group.sub-grp.id
   engine                 = "mysql"
-  engine_version         = "8.0.32"
-  instance_class         = "db.t3.micro"
+  engine_version         = "8.0"
+  instance_class         = "db.t4g.micro"
   multi_az               = true
   db_name                = "mydb"
   username               = "admin"
-  password               = "srivardhan"
+  password               = "Devops123"
   skip_final_snapshot    = true
   vpc_security_group_ids = [aws_security_group.security-group.id]
   depends_on = [ aws_db_subnet_group.sub-grp ]
