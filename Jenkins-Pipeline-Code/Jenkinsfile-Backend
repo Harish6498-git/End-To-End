@@ -62,7 +62,7 @@ pipeline {
             steps {
                 script {
                         sh 'aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 218405927623.dkr.ecr.us-east-2.amazonaws.com'
-                        sh 'docker tag frontend:latest 218405927623.dkr.ecr.us-east-2.amazonaws.com/backend:${BUILD_NUMBER}'
+                        sh 'docker tag backend:latest 218405927623.dkr.ecr.us-east-2.amazonaws.com/backend:${BUILD_NUMBER}'
                         sh 'docker push 218405927623.dkr.ecr.us-east-2.amazonaws.com/backend:${BUILD_NUMBER}'
                 }
             }
