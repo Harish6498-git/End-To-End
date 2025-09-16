@@ -27,8 +27,8 @@ CREATE TABLE IF NOT EXISTS `books` (
 
 -- Dumping data for table `books`
 INSERT INTO `books` (`id`, `title`, `desc`, `price`, `cover`) VALUES
-(1, 'MultiCloud', 'this is mutlicloud with devops cource by veera sir nareshit ', 2343.2, 'https://docs.multy.dev/assets/images/multi-cloud-314609adeec670988dff0882a93fdcb0.png'),
-(2, 'DevOps', 'if you understand the devops it is very easy', 2342.3, 'https://media.licdn.com/dms/image/v2/D5612AQHsA9dJVtZRdw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1730826289071?e=2147483647&v=beta&t=JGr0gJH6RE9b1Dk7nHAYF14Kmv96Gm519UOy_rSa3xE');
+(1, 'WISDEN-2024', 'The most famous sports book in the world, Wisden Cricketers Almanack has been published every year since 1864.', $49.99, 'https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_148,c_scale,dpr_1.5/jackets/9781399411875.jpg'),
+(2, 'Gully Gully', 'Gully Gully: Travels around India during the 2023 World Cup by Aditya Iyer', $49.99, 'https://cdn.esquireindia.co.in/editor-images/-2024-11-29T10%3A35%3A16.197Z-Gully-Gully_Book-Cover.jpg');
 
 -- Add primary key for the books table
 ALTER TABLE `books`
