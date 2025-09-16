@@ -9,8 +9,8 @@ pipeline {
         AWS_ACCOUNT_ID = credentials('ACCOUNT_ID')
         AWS_ECR_REPO_NAME = credentials('ECR_REPO2')
         AWS_DEFAULT_REGION = 'us-east-1'
-        REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/" */
-    }
+        REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/" 
+    }*/
     stages {
         stage('Cleaning Workspace') {
             steps {
@@ -43,10 +43,10 @@ pipeline {
         stage('Trivy File Scan') {
             steps {
                 dir('backend') {
-                    sh 'trivy fs . > trivyfs.txt' */
+                    sh 'trivy fs . > trivyfs.txt' 
                 }
             }
-        }
+        }*/
         stage("Docker Image Build") {
             steps {
                 script {
